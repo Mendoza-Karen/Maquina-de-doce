@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Máquina de doces</title>
+</head>
+<body style="text-align: center;">
+  <h1>Máquina de doces</h1>
+
+  <form style="margin-bottom: 10px;">
+      <span>1 real</span> 
+      <input type="text" name="uns" id="uns" placeholder="0" value="0" oninput="contar()"/>
+          <br />
+  
+      <span>2 reais </span>
+      <input type="text" name="doiss" id="doiss" placeholder="0" value="0" oninput="contar()"/>
+           <br />
+  
+      <span>5 reais </span> 
+      <input type="text" name="cincos" id="cincos" placeholder="0" value="0" oninput="contar()"/>
+  </form>
+  
+  <br/>
+  
+  <button value="Doca" id="docea" onclick="liberarDoce(0)" >Doce A</button>
+  <button value="Docb" id="doceb" onclick="liberarDoce(1)" >Doce B</button>
+  <button value="Docc" id="docec" onclick="liberarDoce(2)" >Doce C</button>
+  <br/>
+  <button value="Cancel" id="cancel" onclick="cancel()"> CANCEL</button>
+  
+  <h2> Total inserido: $<span id="pago" >0.00</span></h2>
+  <br/>
+  <h2 id="mensagem">Insira o dinheiro primeiro. Selecione um doce.</h2>
+        
+  <script src="index.js"></script>   
+</body>
+</html>
